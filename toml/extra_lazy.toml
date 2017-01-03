@@ -35,7 +35,9 @@ hook_post_source = '''
 "   \ 'blog': 'ブログID',
 "   \ 'entry_point': 'https://blog.hatena.ne.jp',
 "   \}
-source ~/.hateblo.vim
+if filereadable("~/.hateblo.vim")
+  source ~/.hateblo.vim
+endif
 '''
 
 # --------------------------
