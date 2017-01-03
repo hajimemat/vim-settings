@@ -1,16 +1,40 @@
-set number
-set hidden
 set timeout timeoutlen=500
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 set modeline
 set modelines=5
 
 set ignorecase " 検索時に大文字小文字を無視
 set smartcase  " ただし、検索文字に大文字小文字があれば無視しない
 set nohlsearch " 検索文字をハイライトしない
+
+" VIMコマンド履歴保持数
+set directory=$TMP/             " ファイルロケーション
+set backupdir=$BACKUP/          " バックアップディレクトリ
+set noswapfile                  " Swapは使わない
+set backup                      " バックアップは使う
+set viminfo='100                " VIMレジストリ保持数
+set viminfo+="1000              " VIMINFO保存ファイル
+set viminfo+=n$TMP/info         " VimInfoファイル
+set autoread                    " 他の場所で更新されたら自動的に読み込む
+set backspace=start,eol,indent  " バックスペースで削除可能なものを増やす
+
+set tabstop=4                   " <TAB>サイズ
+set softtabstop=4               " <TAB>入力時のサイズ
+set shiftwidth=4                " 自動インデントサイズ
+set expandtab                   " タブを空白に変換する
+
+set number                      " 行番号を表示
+set hidden                      " バッファを保存せずに移動できる
+
+if executable('xsel')
+  set clipboard+=unnamedplus      " クリップボード
+endif
+
+set timeout timeoutlen=500
+
+if has('persistent_undo') " Undoをファイルに保存する
+  set undodir=$UNDO
+  set undofile
+endif
 
 " カーソル下の単語を * で検索
 vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v, '\/'), "\n", '\\n', 'g')<CR><CR>
