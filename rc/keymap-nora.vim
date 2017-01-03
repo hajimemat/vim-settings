@@ -25,7 +25,6 @@ vmap <nora>a :Alignta
 " コメントアウトトグル
 nnoremap <silent><nora>co :TComment<CR>
 vmap     <silent><nora>co :TComment<CR>
-nnoremap <silent><snora>s <ESC>
 
 
 " Windowの操作 {{{

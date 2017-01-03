@@ -12,6 +12,8 @@ depends=['vim-textobj-user','context_filetype.vim']
 repo = 'kana/vim-textobj-user'
 [[plugins]]
 repo = 'kannokanno/previm'
+depends=['open-browser.vim']
+on_cmd = ['PrevimOpen']
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
@@ -28,8 +30,11 @@ on_ft = ['toml']
 # --------------------------
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
-depends = ['context_filetype.vim', 'vim-precious', 'previm', 'open-browser']
-on_ft = ['markdown','mkd','md']
+depends = ['vim-precious', 'previm']
+on_ft = ['markdown']
+hook_post_source='''
+echom 'markdown'
+'''
 
 # --------------------------
 # JS編集
