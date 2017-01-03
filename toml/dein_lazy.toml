@@ -1,0 +1,81 @@
+# --------------------------
+# よく依存されるライブラリ
+# --------------------------
+[[plugins]] #Syntastic
+repo  = 'scrooloose/syntastic'
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends=['vim-textobj-user','context_filetype.vim']
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+[[plugins]]
+repo = 'kannokanno/previm'
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+# --------------------------
+# Toml編集
+# --------------------------
+[[plugins]]
+repo = 'cespare/vim-toml'
+depends = ['context_filetype.vim', 'vim-precious']
+on_ft = ['toml']
+
+# --------------------------
+# Markdown編集
+# --------------------------
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+depends = ['context_filetype.vim', 'vim-precious', 'previm', 'open-browser']
+on_ft = ['markdown','mkd','md']
+
+# --------------------------
+# JS編集
+# --------------------------
+[[plugins]]
+repo = "pangloss/vim-javascript"
+depends=["vim-jsx", "vim-coffee-script"]
+
+[[plugins]]
+repo = "mxw/vim-jsx"
+hook_post_source = '''
+let g:jsx_ext_required = 0
+'''
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+
+# --------------------------
+# HTML編集
+# --------------------------
+[[plugins]] # HTML閉じタグ後のコメントを,tで入力
+repo = 'haya14busa/endtagcomment.vim'
+
+# --------------------------
+# Tex編集
+# --------------------------
+[[plugins]]
+repo = 'lervag/vimtex'
+depends = ['vim-quickrun']
+on_ft = ['plaintex', 'tex']
+hook_post_source = '''
+call LoadMySource('plugins/vimtex.rc.vim')
+'''
+
+# --------------------------
+# テキスト編集系
+# --------------------------
+
+# 整列
+[[plugins]]
+repo = 'h1mesuke/vim-alignta.git'
+on_cmd = ['Align']
+
+# コメントトグル
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+on_ft = ['toml']
+hook_add='''
+let g:tcommentMaps = 0
+'''

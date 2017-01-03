@@ -1,0 +1,40 @@
+# --------------------------
+# Unite
+# --------------------------
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+on_source = ['unite.vim']
+depends = ['neomru.vim']
+on_cmd = ['Unite']
+hook_post_source = '''
+call LoadMySource("plugins/unite.rc.vim")
+'''
+
+[[plugins]] # Unite OutLine
+repo = 'Shougo/unite-outline'
+on_source = ['unite.vim']
+[[plugins]] # Uniteカラースキーム
+repo = 'ujihisa/unite-colorscheme'
+on_source = ['unite.vim']
+[[plugins]] # Unite mark
+repo = 'tacroe/unite-mark'
+on_source = ['unite.vim']
+[[plugins]] # Unite fold
+repo = 'osyo-manga/unite-fold'
+on_source = ['unite.vim']
+[[plugins]] # Unite yank
+repo = 'Shougo/neoyank.vim'
+on_source = ['unite.vim']
+[[plugins]] # Unite giti
+repo = 'kmnk/vim-unite-giti.git'
+on_source = ['unite.vim']
+[[plugins]]
+repo = 'thinca/vim-qfreplace'
+on_source = ['unite.vim']
+[[plugins]]
+repo = 'Shougo/unite-build'
+on_source = ['unite.vim']

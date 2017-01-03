@@ -1,0 +1,25 @@
+# EXTRA
+
+# --------------------------
+# 透過
+# --------------------------
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+hook_add = '''
+  let g:seiya_auto_enable=1
+'''
+
+# --------------------------
+# GIT操作
+# --------------------------
+[[plugins]] 
+repo = 'tpope/vim-fugitive'
+
+# --------------------------
+# 装飾
+# --------------------------
+[[plugins]] # きれいなステータスライン
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+ let g:Powerline_symbols='fancy'
+'''

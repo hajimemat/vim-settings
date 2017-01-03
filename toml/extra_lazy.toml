@@ -1,0 +1,67 @@
+# --------------------------
+# ファイラ
+# --------------------------
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+on_cmd=['VimFilerBufferDir']
+hook_post_source = '''
+call LoadMySource("plugins/vimfiler.rc.vim")
+'''
+
+# --------------------------
+# VimShell
+# --------------------------
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
+on_cmd=['VimShell']
+hook_post_source = '''
+call LoadMySource("plugins/vimshell.rc.vim")
+'''
+
+# --------------------------
+# はてなブログ投稿用
+# --------------------------
+[[plugins]]
+repo = 'mattn/webapi-vim'
+[[plugins]]
+repo = 'hajimemat/hateblo.vim'
+depends = ['webapi-vim']
+on_source = ['unite.vim']
+hook_post_source = '''
+" この情報を~/.hateblo.vimに書き出している
+" let g:hateblo = {
+"   \ 'user': 'ユーザ名',
+"   \ 'api_key': 'APIキー',
+"   \ 'blog': 'ブログID',
+"   \ 'entry_point': 'https://blog.hatena.ne.jp',
+"   \}
+source ~/.hateblo.vim
+'''
+
+# --------------------------
+# Twitter
+# --------------------------
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+[[plugins]]
+repo = 'basyura/twibill.vim'
+[[plugins]]
+repo = 'tweetvim'
+depends = ['twibill.vim', 'open-browser.vim']
+on_source = ['unite.vim']
+
+# --------------------------
+# Qfixhowm
+# --------------------------
+[[plugins]]
+repo = 'fuenor/qfixhowm'
+hook_post_source = '''
+call LoadMySource('plugins/qfixhowm.rc.vim')
+'''
+[[plugins]] # Unite qfixhome
+repo = 'osyo-manga/unite-qfixhowm'
+depends = ['qfixhowm']
+on_source = ['unite.vim']
+
+
+
