@@ -25,20 +25,8 @@ call LoadMySource("plugins/vimshell.rc.vim")
 repo = 'mattn/webapi-vim'
 [[plugins]]
 repo = 'hajimemat/hateblo.vim'
-depends = ['webapi-vim']
+depends = ['webapi-vim']j
 on_source = ['unite.vim']
-hook_post_source = '''
-" この情報を~/.hateblo.vimに書き出している
-" let g:hateblo = {
-"   \ 'user': 'ユーザ名',
-"   \ 'api_key': 'APIキー',
-"   \ 'blog': 'ブログID',
-"   \ 'entry_point': 'https://blog.hatena.ne.jp',
-"   \}
-if filereadable("~/.hateblo.vim")
-  source ~/.hateblo.vim
-endif
-'''
 
 # --------------------------
 # Twitter

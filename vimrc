@@ -33,6 +33,8 @@ let g:cache_dir = '~/.cache'
 let g:backup_dir = '~/.cache/backup'
 let g:tmp_dir = '/tmp/vim'
 let g:undo_dir = '~/.cache/undo'
+
+source ~/encfs/hateblo.vim
 "
 
 "---------------------------------------------------------------------------
