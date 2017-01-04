@@ -34,3 +34,19 @@ nnoremap <expr>l  foldclosed('.') != -1 ? 'zo' : 'l'
 
 
 nnoremap <silent>M :<C-u>AutoMarkrement<CR>
+
+"---------------------------------------------------------------------------
+" ターミナルモードの設定
+tnoremap <C-l><C-l> <C-\><C-n>
+tnoremap <C-w> <C-\><C-n><C-w>
+
+" nnoremap <silent> <leader><leader> :source %<CR>
+" inoremap <C-h> <esc>:aaa
+" vnoremap <C-h> <esc>:aaa
+" echo 'loaded $(date)'
+"
+" set t_kb=<BS><hh<BS>h
+"
+" set c_h = 
+" inoremap hh
+"

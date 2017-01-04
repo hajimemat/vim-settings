@@ -9,7 +9,7 @@ endif
 "let mapleader = "\<Space>"
 
 " VIMRC用のディレクトリ
-let g:my_vimrc_path='~/vimrc'
+let g:my_vimrc_path='~/.vim-settings'
 let g:dein_dir='~/.cache/dein'
 
 " Nora設定

@@ -108,3 +108,4 @@ let g:my_pakages = [
 |normal|snora+e|vimfiler|ファイルエクスプローラを表示|
 
 など、詳しくは rc/keymap-nora.vim参照
+

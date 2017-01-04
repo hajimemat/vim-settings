@@ -21,7 +21,6 @@ function! s:my_unite_mapping() abort
   nnoremap <silent> <snora>g :Unite giti/status -horizontal<CR>
 endfunction
 
-
 " }}}
 
 " Gitの操作 {{{
