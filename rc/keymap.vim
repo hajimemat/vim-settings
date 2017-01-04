@@ -39,7 +39,7 @@ nnoremap <silent>M :<C-u>AutoMarkrement<CR>
 " ターミナルモードの設定
 tnoremap <C-l><C-l> <C-\><C-n>
 tnoremap <C-w> <C-\><C-n><C-w>
-
+vmap v <Plug>(expand_region_expand)
 " nnoremap <silent> <leader><leader> :source %<CR>
 " inoremap <C-h> <esc>:aaa
 " vnoremap <C-h> <esc>:aaa

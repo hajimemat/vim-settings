@@ -30,3 +30,9 @@ repo = "thinca/vim-quickrun"
 hook_add = '''
 call LoadMySource('plugins/quickrun.rc.vim')
 '''
+
+# --------------------------
+# Expand Region
+# --------------------------
+[[plugins]]
+repo = "terryma/vim-expand-region"
