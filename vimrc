@@ -61,6 +61,9 @@ call LoadMySource("rc/init.vim")
 " プラグインを使わないベーシックな設定
 call LoadMySource("rc/basic.vim")
 
+" エンコーディング
+call LoadMySource("rc/encoding.vim")
+
 " ファイルタイプ別の設定
 call LoadMySource("rc/types.vim")
 
@@ -70,8 +73,12 @@ call LoadMySource("rc/dein.vim")
 " マッピング
 call LoadMySource("rc/keymap.vim")
 
+" 見た目
+call LoadMySource("rc/view.vim")
+
 " NORAキーマッピング
 if g:nora['enable']
   call LoadMySource("rc/keymap-nora.vim")
 endif
+
 syntax enable
