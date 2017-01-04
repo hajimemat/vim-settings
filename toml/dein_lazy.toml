@@ -69,6 +69,13 @@ call LoadMySource('plugins/vimtex.rc.vim')
 '''
 
 # --------------------------
+# tmux.conf編集
+# --------------------------
+[[plugins]]
+repo = 'keith/tmux.vim'
+on_ft = ['tmux']
+
+# --------------------------
 # テキスト編集系
 # --------------------------
 
