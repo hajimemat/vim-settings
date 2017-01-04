@@ -23,3 +23,4 @@ repo = 'itchyny/lightline.vim'
 hook_add = '''
  let g:Powerline_symbols='fancy'
 '''
+

@@ -21,8 +21,9 @@ call LoadMySource("plugins/vimshell.rc.vim")
 # --------------------------
 # はてなブログ投稿用
 # --------------------------
-[[plugins]]
-repo = 'mattn/webapi-vim'
+# [[plugins]]
+# repo = 'mattn/webapi-vim'
+
 [[plugins]]
 repo = 'hajimemat/hateblo.vim'
 depends = ['webapi-vim']j

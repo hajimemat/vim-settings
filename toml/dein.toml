@@ -37,3 +37,8 @@ call LoadMySource('plugins/quickrun.rc.vim')
 [[plugins]]
 repo = "terryma/vim-expand-region"
 
+# --------------------------
+# WebAPI
+# --------------------------
+[[plugins]]
+repo = 'mattn/webapi-vim'
