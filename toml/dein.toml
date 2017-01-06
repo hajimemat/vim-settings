@@ -42,3 +42,19 @@ repo = "terryma/vim-expand-region"
 # --------------------------
 [[plugins]]
 repo = 'mattn/webapi-vim'
+
+# --------------------------
+# Qfixhowm
+# --------------------------
+[[plugins]]
+repo = 'fuenor/qfixhowm'
+hook_add = '''
+call LoadMySource('plugins/qfixhowm.rc.vim')
+'''
+# hook_post_source = '''
+# call LoadMySource('plugins/qfixhowm.rc.vim')
+# '''
+[[plugins]] # Unite qfixhome
+repo = 'osyo-manga/unite-qfixhowm'
+depends = ['qfixhowm']
+# on_source = ['unite.vim']

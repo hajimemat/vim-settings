@@ -24,10 +24,10 @@ call LoadMySource("plugins/vimshell.rc.vim")
 # [[plugins]]
 # repo = 'mattn/webapi-vim'
 
-[[plugins]]
-repo = 'hajimemat/hateblo.vim'
-depends = ['webapi-vim']j
-on_source = ['unite.vim']
+# [[plugins]]
+# repo = 'hajimemat/hateblo.vim'
+# depends = ['webapi-vim']j
+# on_source = ['unite.vim']
 
 # --------------------------
 # Twitter
@@ -40,19 +40,4 @@ repo = 'basyura/twibill.vim'
 repo = 'tweetvim'
 depends = ['twibill.vim', 'open-browser.vim']
 on_source = ['unite.vim']
-
-# --------------------------
-# Qfixhowm
-# --------------------------
-[[plugins]]
-repo = 'fuenor/qfixhowm'
-hook_post_source = '''
-call LoadMySource('plugins/qfixhowm.rc.vim')
-'''
-[[plugins]] # Unite qfixhome
-repo = 'osyo-manga/unite-qfixhowm'
-depends = ['qfixhowm']
-on_source = ['unite.vim']
-
-
 

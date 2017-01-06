@@ -1,5 +1,30 @@
 " --------------------------------------------
 " メモ機能
+" --------------------------------------------
+
+" キーマップ
+let QFixHowm_Key = 's'
+let QFixHowm_KeyB= 'j'
+
+" メモを保存するディレクトリ
+let howm_dir = '~/gdrive-share/memo'
+
+" メモファイル
+let howm_filename = '%Y/%Y-%m-%d-%H%M%S.md'
+let QFixHowm_QuickMemoFile = hostname().'/Qmem-%Y-00-00-000000.md'
+let QFixHowm_DiaryFile = hostname().'/%Y/%m/%Y-%m-%d-000000.md'
+
+let QFixHowm_FileType =  'markdown'
+let QFixHowm_Title = '#'
+let QFixHowm_Wiki = 1
+
+let g:QFixHowm_Template  =  [
+      \"# %TAG%",
+      \""
+      \]
+
+
+
 
 " 2016-07-06までの設定 {{{
 " let QFixHowm_Key = 'g'
@@ -11,23 +36,23 @@
 " let QFixHowm_RecentMode = 2
 " }}}
 
-let howm_dir     = '~/gdrive-share/memo'
-let QFixHowm_Key = 's'
-let QFixHowm_KeyB = 'j'
-
-let hown_filename = '%Y/%m/%Y-%m-%d-%H%M%S.txt'
-let QFixHowm_QuickMemoFile = hostname().'/Qmem-00-0000-00-00-000000.md'
-let QFixHowm_DiaryFile = hostname().'/%Y/%m/%Y-%m-%d-000000.md'
-
-let QFixHowm_FileType = 'markdown'
-let QFixHowm_Title = '#'
-let QFixHowm_Wiki = 1
-
-"テンプレート
-let g:QFixHowm_Template = [
-  \"# %TAG%",
-  \""
-\]
+" let howm_dir     = '~/gdrive-share/memo'
+" let QFixHowm_Key = 's'
+" let QFixHowm_KeyB = 'j'
+"
+" let hown_filename = '%Y/%m/%Y-%m-%d-%H%M%S.txt'
+" let QFixHowm_QuickMemoFile = hostname().'/Qmem-00-0000-00-00-000000.md'
+" let QFixHowm_DiaryFile = hostname().'/%Y/%m/%Y-%m-%d-000000.md'
+"
+" let QFixHowm_FileType = 'markdown'
+" let QFixHowm_Title = '#'
+" let QFixHowm_Wiki = 1
+"
+" "テンプレート
+" let g:QFixHowm_Template = [
+"   \"# %TAG%",
+"   \""
+" \]
 
 " nnoremap <howm> <nop>
 " nmap <snora>m <howm>

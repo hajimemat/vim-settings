@@ -34,6 +34,7 @@ nnoremap <expr>l  foldclosed('.') != -1 ? 'zo' : 'l'
 
 
 nnoremap <silent>M :<C-u>AutoMarkrement<CR>
+cnoremap w!! w ! sudo tee %
 
 "---------------------------------------------------------------------------
 " ターミナルモードの設定
