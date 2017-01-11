@@ -4,11 +4,11 @@
 function! s:my_unite_mapping() abort
   " <nora>y ヤンクリスト
   nnoremap <silent> <nora>y :<C-u>Unite -buffer-name=yank history/yank<CR>
-  nnoremap <silent> <nora>h :<C-u>Unite -buffer-name=history file_mru file file/new<CR>
+  nnoremap <silent> <nora>h :<C-u>Unite -buffer-name=history bookmark file_mru file file/new<CR>
   nnoremap <silent> <nora>b :<C-u>Unite buffer bookmark<CR>
   nnoremap <silent> <nora>B :<C-u>UniteBookmarkAdd<CR>
   nnoremap <silent> <nora>o :<C-u>Unite -no-start-insert -resume fold outline mark<CR>
-  nnoremap <silent> <nora>o :<C-u>Unite -no-start-insert -resume  fold outline<CR>
+  nnoremap <silent> <nora>o :<C-u>Unite -no-start-insert -resume fold outline<CR>
   nnoremap <silent> <nora>F :<C-u>Unite file file/new directory/new<CR>
   nnoremap <silent> <nora>f :<C-u>UniteWithBufferDir file file/new directory/new<CR>
   nnoremap <silent> <nora>m :<C-u>Unite qfixhowm qfixhowm/new <CR>

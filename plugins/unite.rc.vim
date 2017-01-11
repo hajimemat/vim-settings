@@ -5,7 +5,7 @@ let gunite_enable_auto_select = 0
 
 call unite#custom#profile('default', 'context', {
 \   'start_insert': 1,
-\   'direction': 'botright',
+\   'direction': 'topleft',
 \   'short_source_names' : 1
 \ })
 

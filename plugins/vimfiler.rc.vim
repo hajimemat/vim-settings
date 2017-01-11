@@ -127,6 +127,7 @@ function! s:vimfiler_settings() " {{{
   nnoremap <silent><buffer><expr> t vimfiler#do_action('tabopen')
   nmap <buffer> T <Plug>(vimfiler_expand_tree_recursive)
   nmap <buffer> <Tab> <Plug>(vimfiler_switch_to_other_window)
+  call unite#custom_default_action('directory', 'lcd')
 endfunction"}}}
 
 autocmd MyAutoCmd FileType vimfiler call s:vimfiler_settings()
